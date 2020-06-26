@@ -13,6 +13,10 @@
     transition: all 300ms ease-out;
 }
 
+/*Problem with css animations was that our modal dialog sits in the dom at all times only the opacity is 0
+due to which it will be rendered always in the dom just having zero opactiy that may cause a performance issue
+and not be suitable in most cases.*/
+
 .ModalOpen {
     animation: openModal 0.4s ease-out forwards;
     z-index: 200;
